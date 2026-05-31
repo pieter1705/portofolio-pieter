@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,52 +11,65 @@
         }
     </script>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
         body { font-family: 'Inter', sans-serif; }
-        .hover-card:hover { transform: translateY(-10px); transition: 0.3s; }
+        .hover-card:hover { transform: translateY(-10px); transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
     </style>
 </head>
-<body class="bg-slate-900 text-white">
+<body class="bg-slate-950 text-slate-200">
 
     <!-- Hero Section -->
-    <section class="h-screen flex flex-col justify-center items-center text-center px-4">
-        <h1 class="text-5xl font-bold mb-4">Pieter Julianus Toisuta</h1>
-        <h2 class="text-2xl text-electric mb-4">Full-Stack Web Developer yang Ngerti Kode + Ngerti Bisnis</h2>
-        <p class="max-w-2xl mb-8">Saya membangun & mengotomatisasi sistem informasi untuk akademik, koperasi, dan lembaga publik. S1 Informatika ITB Stikom Ambon, IPK 3.81.</p>
-        <div class="space-x-4">
-            <a href="#projects" class="bg-electric text-slate-900 px-6 py-3 rounded-lg font-bold">Lihat Project Saya</a>
-            <a href="#contact" class="border border-electric text-electric px-6 py-3 rounded-lg">Hubungi Saya</a>
+    <section class="min-h-screen flex flex-col justify-center items-center text-center px-6">
+        <h1 class="text-6xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-electric to-blue-400">
+            Pieter Julianus Toisuta
+        </h1>
+        <h2 class="text-xl md:text-2xl text-electric mb-6 font-light tracking-wide">
+            Full-Stack Web Developer yang Ngerti Kode + Ngerti Bisnis
+        </h2>
+        <p class="max-w-xl mb-10 text-slate-400 leading-relaxed">
+            Saya membangun & mengotomatisasi sistem informasi untuk akademik, koperasi, dan lembaga publik. S1 Informatika ITB Stikom Ambon, IPK 3.81.
+        </p>
+        <div class="flex space-x-4">
+            <a href="#projects" class="bg-electric hover:bg-blue-400 text-slate-950 px-8 py-3 rounded-full font-bold transition duration-300 shadow-[0_0_20px_rgba(0,212,255,0.3)]">
+                Lihat Project Saya
+            </a>
+            <a href="#contact" class="border border-electric text-electric hover:bg-electric hover:text-slate-950 px-8 py-3 rounded-full transition duration-300">
+                Hubungi Saya
+            </a>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="py-20 px-4">
-        <h3 class="text-3xl text-center mb-12">Project Unggulan</h3>
+    <section id="projects" class="py-24 px-6 bg-slate-900/50">
+        <h3 class="text-4xl font-bold text-center mb-16 text-white">Project Unggulan</h3>
         <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <!-- Card 1 -->
-            <div class="bg-slate-800 p-6 rounded-xl hover-card">
-                <div class="h-40 bg-slate-700 mb-4 rounded flex items-center justify-center">Mockup SIAKAD</div>
-                <h4 class="font-bold text-xl mb-2">SIAKAD FKIP Unpatti</h4>
-                <p class="text-sm">Kelola database mahasiswa, panel plotting penguji, modul cetak kuitansi.</p>
+            <div class="bg-slate-900 border border-slate-800 p-8 rounded-2xl hover-card shadow-xl">
+                <div class="h-40 bg-slate-800 mb-6 rounded-lg flex items-center justify-center text-slate-500 font-mono">Mockup SIAKAD</div>
+                <h4 class="font-bold text-xl mb-3 text-white">SIAKAD FKIP Unpatti</h4>
+                <p class="text-sm text-slate-400">Kelola database mahasiswa, panel plotting penguji, modul cetak kuitansi.</p>
             </div>
             <!-- Card 2 -->
-            <div class="bg-slate-800 p-6 rounded-xl hover-card">
-                <div class="h-40 bg-slate-700 mb-4 rounded flex items-center justify-center">Mockup KSP</div>
-                <h4 class="font-bold text-xl mb-2">KSP Bhakti Jaya Prima</h4>
-                <p class="text-sm">Otomatisasi pelacakan setoran harian + modul penggajian karyawan.</p>
+            <div class="bg-slate-900 border border-slate-800 p-8 rounded-2xl hover-card shadow-xl">
+                <div class="h-40 bg-slate-800 mb-6 rounded-lg flex items-center justify-center text-slate-500 font-mono">Mockup KSP</div>
+                <h4 class="font-bold text-xl mb-3 text-white">KSP Bhakti Jaya Prima</h4>
+                <p class="text-sm text-slate-400">Otomatisasi pelacakan setoran harian + modul penggajian karyawan.</p>
             </div>
             <!-- Card 3 -->
-            <div class="bg-slate-800 p-6 rounded-xl hover-card">
-                <div class="h-40 bg-slate-700 mb-4 rounded flex items-center justify-center">Mockup SFR</div>
-                <h4 class="font-bold text-xl mb-2">Dashboard Loka Monitor</h4>
-                <p class="text-sm">Dashboard real-time untuk monitoring frekuensi[cite: 1].</p>
+            <div class="bg-slate-900 border border-slate-800 p-8 rounded-2xl hover-card shadow-xl">
+                <div class="h-40 bg-slate-800 mb-6 rounded-lg flex items-center justify-center text-slate-500 font-mono">Mockup SFR</div>
+                <h4 class="font-bold text-xl mb-3 text-white">Dashboard Loka Monitor</h4>
+                <p class="text-sm text-slate-400">Dashboard real-time untuk monitoring frekuensi.</p>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-20 text-center">
-        <h3 class="text-3xl mb-6">Punya project sistem informasi? Yuk diskusiin</h3>
-        <p class="mb-4">udutpieter17@email.com | +62 812-4819-2170[cite: 1]</p>
+    <section id="contact" class="py-24 text-center px-6">
+        <h3 class="text-3xl font-bold mb-8 text-white">Punya project sistem informasi? Yuk diskusiin</h3>
+        <div class="inline-block bg-slate-900 px-8 py-4 rounded-xl border border-slate-800">
+            <p class="text-electric font-medium">udutpieter17@email.com | +62 812-4819-2170</p>
+        </div>
     </section>
 
 </body>
