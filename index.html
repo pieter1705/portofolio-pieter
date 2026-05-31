@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pieter Julianus Toisuta | Full-Stack Web Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: { extend: { colors: { electric: '#00d4ff' } } }
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .hover-card:hover { transform: translateY(-10px); transition: 0.3s; }
+    </style>
+</head>
+<body class="bg-slate-900 text-white">
+
+    <!-- Hero Section -->
+    <section class="h-screen flex flex-col justify-center items-center text-center px-4">
+        <h1 class="text-5xl font-bold mb-4">Pieter Julianus Toisuta</h1>
+        <h2 class="text-2xl text-electric mb-4">Full-Stack Web Developer yang Ngerti Kode + Ngerti Bisnis</h2>
+        <p class="max-w-2xl mb-8">Saya membangun & mengotomatisasi sistem informasi untuk akademik, koperasi, dan lembaga publik. S1 Informatika ITB Stikom Ambon, IPK 3.81.</p>
+        <div class="space-x-4">
+            <a href="#projects" class="bg-electric text-slate-900 px-6 py-3 rounded-lg font-bold">Lihat Project Saya</a>
+            <a href="#contact" class="border border-electric text-electric px-6 py-3 rounded-lg">Hubungi Saya</a>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-4">
+        <h3 class="text-3xl text-center mb-12">Project Unggulan</h3>
+        <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <!-- Card 1 -->
+            <div class="bg-slate-800 p-6 rounded-xl hover-card">
+                <div class="h-40 bg-slate-700 mb-4 rounded flex items-center justify-center">Mockup SIAKAD</div>
+                <h4 class="font-bold text-xl mb-2">SIAKAD FKIP Unpatti</h4>
+                <p class="text-sm">Kelola database mahasiswa, panel plotting penguji, modul cetak kuitansi.</p>
+            </div>
+            <!-- Card 2 -->
+            <div class="bg-slate-800 p-6 rounded-xl hover-card">
+                <div class="h-40 bg-slate-700 mb-4 rounded flex items-center justify-center">Mockup KSP</div>
+                <h4 class="font-bold text-xl mb-2">KSP Bhakti Jaya Prima</h4>
+                <p class="text-sm">Otomatisasi pelacakan setoran harian + modul penggajian karyawan.</p>
+            </div>
+            <!-- Card 3 -->
+            <div class="bg-slate-800 p-6 rounded-xl hover-card">
+                <div class="h-40 bg-slate-700 mb-4 rounded flex items-center justify-center">Mockup SFR</div>
+                <h4 class="font-bold text-xl mb-2">Dashboard Loka Monitor</h4>
+                <p class="text-sm">Dashboard real-time untuk monitoring frekuensi[cite: 1].</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 text-center">
+        <h3 class="text-3xl mb-6">Punya project sistem informasi? Yuk diskusiin</h3>
+        <p class="mb-4">udutpieter17@email.com | +62 812-4819-2170[cite: 1]</p>
+    </section>
+
+</body>
+</html>
